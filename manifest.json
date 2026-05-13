@@ -1,0 +1,28 @@
+{
+  "name": "MedicalToolKit - Free Health Calculators",
+  "short_name": "MedicalToolKit",
+  "description": "Free online medical and health calculators. BMI, due date, blood sugar, calorie calculator, and 11 more tools.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2563EB",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect fill='%232563EB' width='192' height='192'/><text x='96' y='96' font-size='80' font-weight='700' fill='%23fff' text-anchor='middle' dominant-baseline='middle'>MT</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["health", "medical", "utilities"],
+  "screenshots": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 540 720'><rect fill='%23f8fafc' width='540' height='720'/><text x='270' y='360' font-size='48' font-weight='700' fill='%232563EB' text-anchor='middle' dominant-baseline='middle'>MedicalToolKit</text></svg>",
+      "sizes": "540x720",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ]
+}

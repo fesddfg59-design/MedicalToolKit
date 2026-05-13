@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /pages/
+Allow: /css/
+Allow: /js/
+Disallow: /dist/
+
+Sitemap: https://medicaltoolkit.pages.dev/sitemap.xml
