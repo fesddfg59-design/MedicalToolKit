@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>A1C Converter — Free Online Tool | MedicalToolKit</title>
+  <meta name="description" content="Convert A1C to average blood glucose instantly. Free online A1C to eAG converter supporting mg/dL and mmol/L units with ADA guidelines.">
+  <meta name="keywords" content="A1C converter, eAG calculator, average blood glucose, A1C to glucose conversion, diabetes monitoring">
+  <meta name="author" content="MedicalToolKit">
+  <link rel="canonical" href="https://medicaltoolkit.pages.dev/pages/a1c-converter.html">
+  <meta property="og:title" content="A1C Converter — Free Online Tool">
+  <meta property="og:description" content="Convert A1C to average blood glucose instantly with our free online converter.">
+  <meta property="og:url" content="https://medicaltoolkit.pages.dev/pages/a1c-converter.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2563EB">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/calculator.css">
+  <script>
+  (function(d,z,s){s=d.createElement('script');s.src='//MONETAG_PUSH_SCRIPT_URL';s.async=true;d.head.appendChild(s);})(document);
+  </script>
+</head>
+<body>
+<script>var _mntag_pop = "ZONE_POPUNDER_ID";</script>
+<script src="//MONETAG_POP_SCRIPT" async></script>
+
+<header class="site-header" role="banner">
+  <div class="header-inner">
+    <a href="/" class="site-logo" aria-label="MedicalToolKit Home">
+      <div class="logo-icon"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z" fill="white"/></svg></div>
+      <span class="logo-text">Medical<span>ToolKit</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/pages/bmi-calculator.html">Fitness</a>
+      <a href="/pages/due-date-calculator.html">Pregnancy</a>
+      <a href="/pages/blood-sugar-calculator.html">Diabetes</a>
+      <a href="/pages/blood-pressure-checker.html">Heart</a>
+      <a href="/pages/gfr-calculator.html">Kidney</a>
+      <a href="/pages/anxiety-test.html">Mental Health</a>
+      <a href="/pages/about.html">About</a>
+    </nav>
+    <div class="header-search search-wrapper">
+      <input type="search" class="header-search-input search-input" placeholder="Search calculators..." aria-label="Search calculators">
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <div class="mobile-search"><input type="search" class="search-input" placeholder="Search calculators..."></div>
+    <a href="/">Home</a>
+    <a href="/pages/a1c-converter.html">A1C Converter</a>
+    <a href="/pages/blood-sugar-calculator.html">Blood Sugar</a>
+    <a href="/pages/about.html">About</a>
+  </nav>
+</header>
+
+<div class="ad-banner-top"><small class="ad-label">Advertisement</small><div class="monetag-banner" data-zone="ZONE_BANNER_ID"></div></div>
+
+<div class="breadcrumb-bar">
+  <div class="breadcrumb"><a href="/">Home</a> <span class="breadcrumb-sep">/</span> <span>A1C Converter</span></div>
+</div>
+
+<section class="page-hero" aria-labelledby="pageTitle">
+  <h1 id="pageTitle">A1C Converter — Free Online Tool</h1>
+  <p>Convert between A1C percentage and average blood glucose (eAG) instantly. Supports mg/dL and mmol/L units.</p>
+</section>
+
+<div class="calc-page-layout">
+  <main class="calc-main">
+    <div class="calc-intro">
+      <h2>Convert A1C to Average Glucose</h2>
+      <p>The A1C test, also known as glycated hemoglobin or HbA1c, measures average blood sugar levels over 2-3 months. This A1C converter allows you to easily convert between A1C percentage and estimated average glucose (eAG). Understanding this relationship helps people with diabetes or prediabetes monitor their long-term blood sugar control. The American Diabetes Association (ADA) provides specific targets for A1C levels based on individual health conditions. This converter uses the standard conversion formula to calculate eAG from A1C and vice versa, supporting both mg/dL and mmol/L units for international use.</p>
+    </div>
+
+    <div class="calc-widget">
+      <div class="calc-widget-header"><span class="calc-widget-icon">💉</span><h2>A1C Converter</h2></div>
+      <div class="calc-widget-body">
+        <div class="unit-toggle">
+          <button class="unit-btn active" id="unitMgdl">mg/dL</button>
+          <button class="unit-btn" id="unitMmol">mmol/L</button>
+        </div>
+        <form class="calc-form" id="a1cForm">
+          <div class="calc-grid-2">
+            <div class="form-group">
+              <label for="a1cValue" class="form-label">A1C (%)</label>
+              <input type="number" id="a1cValue" class="calc-input" placeholder="Enter A1C %" min="4" max="15" step="0.1">
+              <span class="input-error-msg"></span>
+            </div>
+            <div class="form-group">
+              <label for="glucoseValue" class="form-label">Average Glucose <span id="glucoseUnit">(mg/dL)</span></label>
+              <input type="number" id="glucoseValue" class="calc-input" placeholder="Or enter glucose" min="50" max="500" step="1">
+              <span class="input-error-msg"></span>
+            </div>
+          </div>
+          <button type="button" class="calc-btn" id="convertA1c">Convert</button>
+          <button type="button" class="calc-btn-secondary" id="resetA1c">Reset</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="calc-result-box" id="resultBox">
+      <div class="result-header">
+        <div class="result-icon" id="resultIcon">➜</div>
+        <div>
+          <div class="result-title">Conversion Result</div>
+          <div><span class="result-value" id="resultValue">0</span> <span class="result-unit" id="resultUnit">mg/dL</span></div>
+          <span class="result-category" id="resultCategory">Normal</span>
+        </div>
+      </div>
+      <div class="result-details">
+        <div class="result-detail-row">
+          <span class="result-detail-label">A1C:</span>
+          <span class="result-detail-value" id="resultA1c">0%</span>
+        </div>
+        <div class="result-detail-row">
+          <span class="result-detail-label">eAG (mg/dL):</span>
+          <span class="result-detail-value" id="resultEagMg">0</span>
+        </div>
+        <div class="result-detail-row">
+          <span class="result-detail-label">eAG (mmol/L):</span>
+          <span class="result-detail-value" id="resultEagMmol">0</span>
+        </div>
+      </div>
+      <div class="result-description" id="resultDescription">Your A1C level indicates good blood sugar control. Continue monitoring regularly.</div>
+      <div class="share-result-section">
+        <div class="share-result-label">Share Your Result</div>
+        <div class="share-result-btns">
+          <button class="share-btn share-whatsapp">📱 WhatsApp</button>
+          <button class="share-btn share-facebook">📘 Facebook</button>
+          <button class="share-btn share-twitter">🐦 Twitter</button>
+          <button class="share-btn copy-result">📋 Copy</button>
+          <button class="share-btn print-result">🖨️ Print</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>How to Use This Converter</h2>
+      <p>Using the A1C converter is simple. Select your preferred unit (mg/dL or mmol/L). Then enter either your A1C percentage or your average glucose value. Click the "Convert" button to instantly see the corresponding value. The converter will display both the A1C percentage and average glucose in both measurement units, along with the ADA risk category.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>How It Works — The Formula</h2>
+      <div class="formula-box">
+        <strong>A1C to eAG (mg/dL):</strong> eAG = (28.7 × A1C) - 46.7<br><br>
+        <strong>eAG to A1C:</strong> A1C = (eAG + 46.7) / 28.7<br><br>
+        <strong>Convert mg/dL to mmol/L:</strong> mmol/L = mg/dL ÷ 18.01
+      </div>
+      <p>The conversion formula between A1C and eAG was developed based on research published in Diabetes Care. The relationship is linear, making it easy to convert between the two measurements. A1C reflects average blood glucose over 2-3 months, while eAG (estimated average glucose) expresses this as a daily average glucose value.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>Understanding Your Results</h2>
+      <ul>
+        <li><strong>A1C &lt; 5.7% / eAG &lt; 120 mg/dL:</strong> Normal blood sugar control (non-diabetic range)</li>
+        <li><strong>A1C 5.7-6.4% / eAG 120-150 mg/dL:</strong> Prediabetes range - increased diabetes risk</li>
+        <li><strong>A1C 6.5% or higher / eAG 150+ mg/dL:</strong> Diabetes range - consult your healthcare provider</li>
+        <li><strong>A1C &lt; 7% for most adults with diabetes:</strong> Recommended ADA target for most people</li>
+        <li><strong>A1C &lt; 6.5% for some:</strong> Individualized tighter control may benefit certain patients</li>
+      </ul>
+    </div>
+
+    <div class="faq-section">
+      <div class="faq-header"><h2>Frequently Asked Questions</h2></div>
+      <div class="faq-item open">
+        <button class="faq-question">What does A1C measure? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>A1C measures the percentage of hemoglobin (a protein in red blood cells) that has glucose attached to it. This percentage reflects your average blood glucose levels over the previous 2-3 months. It's a key indicator of long-term blood sugar control and is used to diagnose diabetes and monitor how well diabetes is being managed.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How accurate is the A1C to eAG conversion? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>The conversion formula is quite accurate for most people, with an average error of about ±5-10 mg/dL. However, accuracy can vary based on individual factors including age, ethnicity, hemoglobin variants, and kidney function. The eAG is an estimate based on population studies, so your actual average glucose may differ slightly from the calculated eAG.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">What's the difference between A1C and fasting blood glucose? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Fasting blood glucose measures your blood sugar at one specific moment (usually in the morning), while A1C reflects your average glucose over 2-3 months. Both are useful: fasting glucose shows how your body manages glucose immediately, while A1C provides a longer-term picture of overall diabetes control. They measure different things and serve different diagnostic purposes.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">How often should I get my A1C tested? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>The American Diabetes Association recommends A1C testing at least twice yearly for people meeting treatment goals, and quarterly testing for those whose therapy has changed or who aren't meeting their targets. Some healthcare providers may recommend more frequent testing during diabetes diagnosis or medication adjustments to ensure optimal management.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question">Can factors other than diet affect A1C? <span class="faq-icon">+</span></button>
+        <div class="faq-answer"><p>Yes, several factors can affect A1C levels beyond diet, including stress, sleep quality, physical activity level, medications, alcohol consumption, smoking, and certain medical conditions. Illness, pregnancy, anemia, kidney disease, and liver disease can also impact A1C results. This is why it's important to discuss your A1C results with your healthcare provider for proper interpretation.</p></div>
+      </div>
+    </div>
+
+    <div class="content-section" style="margin-top: 40px;">
+      <h2>Related Tools You May Like</h2>
+      <div class="related-tools">
+        <a href="/pages/blood-sugar-calculator.html" class="related-tool-card"><span class="related-tool-icon">💉</span><div class="related-tool-info"><h4>Blood Sugar Calculator</h4><p>Glucose level checker</p></div></a>
+        <a href="/pages/bmi-calculator.html" class="related-tool-card"><span class="related-tool-icon">⚖️</span><div class="related-tool-info"><h4>BMI Calculator</h4><p>Body Mass Index</p></div></a>
+        <a href="/pages/gfr-calculator.html" class="related-tool-card"><span class="related-tool-icon">🫁</span><div class="related-tool-info"><h4>GFR Calculator</h4><p>Kidney function</p></div></a>
+      </div>
+    </div>
+
+    <div class="medical-disclaimer"><div class="disc-icon">⚠️</div><div><p><strong>Medical Disclaimer:</strong> This A1C converter is for informational purposes only. Always consult with your healthcare provider for proper diabetes management and interpretation of test results.</p></div></div>
+
+    <div style="text-align:center;padding:16px 0;margin-top:24px;">
+      <a href="DIRECT_LINK_PLACEHOLDER_URL" class="direct-link-btn" target="_blank" rel="noopener sponsored">Learn More About Diabetes Management →</a>
+    </div>
+  </main>
+
+  <aside class="calc-sidebar">
+    <div class="sidebar-widget">
+      <div class="sidebar-widget-header"><h3>Diabetes Management Tips</h3></div>
+      <div class="sidebar-widget-body">
+        <div class="sidebar-tip"><strong>Monitor Regularly:</strong> Check your A1C every 3-6 months and keep detailed blood glucose logs.</div>
+        <div class="sidebar-tip"><strong>Healthy Diet:</strong> Focus on low glycemic index foods and balanced macronutrients.</div>
+        <div class="sidebar-tip"><strong>Stay Active:</strong> Aim for 150 minutes of moderate exercise weekly to help control blood sugar.</div>
+      </div>
+    </div>
+    <div class="sidebar-widget"><div class="sidebar-widget-body" style="text-align: center;"><a href="DIRECT_LINK_PLACEHOLDER_URL" class="direct-link-btn" target="_blank" rel="noopener sponsored">Learn More →</a></div></div>
+    <div class="monetag-native" data-zone="ZONE_NATIVE_ID"></div>
+  </aside>
+</div>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="site-logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="white"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 3c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm7 13H5v-.23c0-.62.28-1.2.76-1.58C7.47 15.82 9.64 15 12 15s4.53.82 6.24 2.19c.48.38.76.97.76 1.58V19z"/></svg></div><span class="logo-text">Medical<span>ToolKit</span></span></div><p>Free medical calculators trusted by millions worldwide.</p></div>
+    <div class="footer-col"><h4>Popular Tools</h4><a href="/pages/bmi-calculator.html">BMI Calculator</a><a href="/pages/blood-sugar-calculator.html">Blood Sugar</a><a href="/pages/a1c-converter.html">A1C Converter</a><a href="/pages/calorie-calculator.html">Calorie Calculator</a></div>
+    <div class="footer-col"><h4>All Tools</h4><a href="/pages/due-date-calculator.html">Due Date</a><a href="/pages/sleep-calculator.html">Sleep</a><a href="/pages/anxiety-test.html">Anxiety Test</a><a href="/pages/heart-rate-calculator.html">Heart Rate</a></div>
+    <div class="footer-col"><h4>Company</h4><a href="/pages/about.html">About Us</a><a href="/pages/contact.html">Contact</a><a href="/pages/privacy-policy.html">Privacy</a><a href="/pages/disclaimer.html">Disclaimer</a></div>
+  </div>
+  <div class="footer-bottom"><p>&copy; 2024 MedicalToolKit. All rights reserved. <strong>Not medical advice.</strong></p><div class="footer-legal-links"><a href="/pages/privacy-policy.html">Privacy</a><a href="/pages/disclaimer.html">Disclaimer</a><a href="/pages/contact.html">Contact</a></div></div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top">↑</button>
+<div class="cookie-consent" id="cookieBanner" role="dialog" aria-label="Cookie consent"><p>We use cookies to improve your experience. By clicking "Accept", you agree to our <a href="/pages/privacy-policy.html">Privacy Policy</a>.</p><div class="cookie-btns"><button class="btn-accept-cookies" id="acceptCookies">Accept</button><button class="btn-reject-cookies" id="rejectCookies">Decline</button></div></div>
+<div class="ad-sticky-bottom"><div class="monetag-sticky" data-zone="ZONE_STICKY_ID"></div></div>
+
+<script src="/js/main.js" defer></script>
+<script src="/js/calculators/a1c.js" defer></script>
+</body>
+</html>
